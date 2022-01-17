@@ -49,7 +49,7 @@ i:hover {
     left: 0;
 }
 
-h1, h1, h3, h4, h5, h6, span {
+h1, h2, h3, h4, h5, h6, span {
     color: #242424;
     text-align: center;
     line-height: 1.25;
@@ -260,42 +260,43 @@ nav {
     }
 }
 
-/* Languages */
+/* Skills */
 
-.language__img {
+.skill__img {
     width: 100%;
+    height: 90%;
     max-width: 100px;
     transition: all 300ms;
 }
 
-.language:hover .language__img {
+.skill:hover .skill__img {
     filter: brightness(80%);
     opacity: 0.86;
     transform: scale(0.9)
 }
 
-.language__img--wrapper {
+.skill__img--wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 25px 16px;
 }
 
-.language {
+.skill {
     width: 25%;
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-.language__list {
+.skill__list {
     display: flex;
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
 }
 
-.language__name {
+.skill__name {
     position: absolute;
     bottom: 0;
     transform: scale(0);
@@ -304,7 +305,7 @@ nav {
     opacity: 0
 }
 
-.language:hover .language__name {
+.skill:hover .skill__name {
     transform: scale(1);
     opacity: 1;
 }
@@ -326,6 +327,7 @@ nav {
 .project__wrapper {
     display: flex;
     box-shadow: 0 20px 80px rgba(0, 0, 0, 0.3);
+    max-height: 700px;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
@@ -405,7 +407,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 8% 0;
+    padding: 4% 0;
 }
 
 .footer__logo--img {
@@ -417,7 +419,7 @@ footer {
     max-width: 300px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 
 .footer__logo--popper {
@@ -427,6 +429,11 @@ footer {
     font-weight: 700;
     opacity: 0;
     transition: all 300ms ease;
+}
+
+.footer__logo--text {
+    color: #fff;
+    margin-bottom: 16px;
 }
 
 .footer__anchor {
